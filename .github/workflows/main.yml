@@ -40,8 +40,8 @@ variable : ${{github.VARIABLE_NAME}}
 # on --> on triger , on push to codebase, raising a pr to codebase
 
 name : My Application
-on:
-  push:
+# on:
+  # push:
     # branches: [master]
 
 jobs:
