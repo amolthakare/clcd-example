@@ -42,7 +42,7 @@ variable : ${{github.VARIABLE_NAME}}
 name : My Application
 on:
   push:
-    branches: [master]
+    # branches: [master]
 
 jobs:
   build: 
