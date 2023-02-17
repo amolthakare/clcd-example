@@ -40,9 +40,9 @@ variable : ${{github.VARIABLE_NAME}}
 # on --> on triger , on push to codebase, raising a pr to codebase
 
 name : My Application
-# on:
-  # push:
-    # branches: [master]
+on:
+  push:
+    branches: [master]
 
 jobs:
   build: 
@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Print node version
-        run: echo "Hello World"
+        run: node --version
       - name: Print NPM version
         run: npm --version
       - name: print pwd
