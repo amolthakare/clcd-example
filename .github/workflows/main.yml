@@ -1,1 +1,56 @@
+
+
+
+
+
+
+# key:value
+# key:title
+# value : website name
+
 title: Website Name
+description : A website for uploading content
+age : 30
+# String, arrays , objects
+
+# Array
+tags: 
+  - technology
+  - images
+  - creative
+
+# indentation matters
+# spaces
+
+# objects
+address:
+  street: MG Road
+  city: Bangalore
+  street: KA
+
+# github actions
+# env variables
+value: ${{env.Value}}
+variable : ${{github.VARIABLE_NAME}}
+
+# yaml get main.yaml name  -->My Application
+
+# workflow --> steps to follow to get work done
+
+# on --> on triger , on push to codebase, raising a pr to codebase
+
+name : My Application
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print node version
+        run: echo "Hello World"
+      - name: Print NPM version
+        run: npm --version
+      - name: print pwd
