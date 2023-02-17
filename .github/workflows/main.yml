@@ -54,3 +54,4 @@ jobs:
       - name: Print NPM version
         run: npm --version
       - name: print pwd
+        run: pwd
